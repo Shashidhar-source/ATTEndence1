@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tsconfig.json Resources</title>
+  <style>
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1, h2 {
+      margin: 0 0 0.75rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    section {
+      margin-bottom: 1.5rem;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+    }
+    ul {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+    pre {
+      margin: 0;
+      padding: 1rem;
+      background: #f1f5f9;
+      border-radius: 0.75rem;
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .note {
+      color: #475569;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>tsconfig.json Resources</h1>
+  <p class="note">This document combines the configuration properties listed in <code>tsconfig.json</code> for the current project.</p>
+
+  <section>
+    <h2>Compiler Options</h2>
+    <ul>
+      <li><strong>target</strong>: <code>es2020</code></li>
+      <li><strong>lib</strong>: <code>dom</code>, <code>dom.iterable</code>, <code>esnext</code></li>
+      <li><strong>allowJs</strong>: <code>true</code></li>
+      <li><strong>skipLibCheck</strong>: <code>true</code></li>
+      <li><strong>esModuleInterop</strong>: <code>true</code></li>
+      <li><strong>allowSyntheticDefaultImports</strong>: <code>true</code></li>
+      <li><strong>strict</strong>: <code>true</code></li>
+      <li><strong>forceConsistentCasingInFileNames</strong>: <code>true</code></li>
+      <li><strong>noFallthroughCasesInSwitch</strong>: <code>true</code></li>
+      <li><strong>module</strong>: <code>esnext</code></li>
+      <li><strong>moduleResolution</strong>: <code>bundler</code></li>
+      <li><strong>resolveJsonModule</strong>: <code>true</code></li>
+      <li><strong>isolatedModules</strong>: <code>true</code></li>
+      <li><strong>noEmit</strong>: <code>true</code></li>
+      <li><strong>jsx</strong>: <code>react-jsx</code></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Included Paths</h2>
+    <pre><code>["src"]</code></pre>
+  </section>
+
+  <section>
+    <h2>Raw tsconfig.json</h2>
+    <pre><code>{
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}</code></pre>
+  </section>
+</body>
+</html>
